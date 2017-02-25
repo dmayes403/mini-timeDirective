@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="timeApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body ng-controller="mainCtrl">
+
+
+  <div clickety-click>hey there {{name}}</div>
+  <show-time ng-repeat="country in countries" country-name="{{country.name}}" country-tz="{{country.tz}}"></show-time>
+
+  <show-time the-name="name"></show-time>
+  <show-time the-name="name" the-callback="logTheThing()"></show-time>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/mainCtrl.js"></script>
+  <script src="./js/timeDirective.js"></script>
+</body>
+</html>
